@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href='/static/style.css'/>
+    <script language="JavaScript" type="text/javascript"
+            src="{{ url_for('static', filename = 'libs/jquery.js') }}"></script>
+    <script language="JavaScript" type="text/javascript"
+            src="{{ url_for('static', filename = 'libs/jSignature.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/chineseCharRecog.js') }}"></script>
+</head>
+<body>
+<br>
+<br>
+<div id="signature"></div>
+<br>
+<p>
+    <button type="button" onclick="clearChar()">Clear</button>
+
+</p>
+Predicted character:
+<span id="predicted_char" style="font-size:40px;">
+</span>
+
+<span id="resultTable" style="font-size:30px;">
+</span>
+</table>
+</body>
+</html>
